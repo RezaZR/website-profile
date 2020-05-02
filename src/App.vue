@@ -1,12 +1,41 @@
 <template>
   <div id="app">
+    <div>{{ message }}</div>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
   </div>
 </template>
+
+<script>
+import gql from "graphql-tag";
+
+export default {
+  name: "app",
+  data() {
+    return {
+      // message: "Hi from Reza"
+    };
+  },
+  computed: {
+    message() {
+      return this.messages ? this.messages[0].text : "";
+    }
+  },
+  apollo: {
+    messages: gql`
+      query {
+        messages {
+          text
+          isShown
+        }
+      }
+    `
+  }
+};
+</script>
 
 <style lang="scss">
 #app {

@@ -6,6 +6,7 @@ node_modules
 /tests/e2e/screenshots/
 
 # local env files
+.env
 .env.local
 .env.*.local
 
@@ -22,3 +23,9 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+.eslintrc.js
+.gitignore
+.babel.config.js
+cypress.json
+.browserslistrc

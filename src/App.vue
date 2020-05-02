@@ -39,8 +39,8 @@ export default {
 };
 </script>
 
-<style lang="scss">
-// Root
+<style>
+/* Root */
 
 html {
   -webkit-text-size-adjust: 100%;
@@ -79,7 +79,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-// Element
+/* Element */
 
 *,
 *:before,
@@ -91,13 +91,14 @@ a {
   background: transparent;
   text-decoration: none;
   cursor: pointer;
-  &:active,
-  &:hover,
-  &:link,
-  &:visited {
-    background: transparent;
-    text-decoration: none;
-  }
+}
+
+a:active,
+a:hover,
+a:link,
+a:visited {
+  background: transparent;
+  text-decoration: none;
 }
 
 ul {
@@ -135,10 +136,8 @@ textarea {
   border-radius: 0;
 }
 
-input {
-  &[type="date"] {
-    // font-family: $primary-font;
-  }
+input[type="date"] {
+  /* font-family: $primary-font; */
 }
 
 button:focus,
@@ -164,7 +163,7 @@ a {
   display: inline-block;
 }
 
-// Global
+/* Global */
 
 .clearfix {
   clear: both;
@@ -220,21 +219,21 @@ a {
   float: left;
 }
 
-// .color-green {
-//   color: $green;
-// }
+/* .color-green {
+  color: $green;
+}
 
-// .color-yellow {
-//   color: $yellow;
-// }
+.color-yellow {
+  color: $yellow;
+}
 
-// .color-orange {
-//   color: $orange;
-// }
+.color-orange {
+  color: $orange;
+}
 
-// .color-red {
-//   color: $red;
-// }
+.color-red {
+  color: $red;
+} */
 
 .font-sm {
   font-size: var(--font-sm);
@@ -262,7 +261,7 @@ a {
   border-radius: 6px;
 }
 
-// Layout
+/* Layout */
 
 .container {
   position: relative;

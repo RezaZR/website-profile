@@ -1,3 +1,3 @@
 # Website Profile
 
-## Personal website for Reza. Built using Vue, Apollo & GraphQL. Hosted by Netlify :v:
+## Personal website for Reza. Built using Vue, Headless CMS, Apollo & GraphQL. Hosted by Netlify :v:

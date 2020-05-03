@@ -50,6 +50,7 @@ export default {
 .header > ul > li {
   display: inline-block;
   font-size: var(--font-xxl);
+  vertical-align: middle;
 }
 
 .header > ul > li:not(:last-child) {
@@ -57,7 +58,7 @@ export default {
 }
 
 .header > ul > li > a {
-  color: black;
+  color: var(--color);
   padding: 0.5em;
 }
 </style>

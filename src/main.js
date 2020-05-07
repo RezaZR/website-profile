@@ -9,11 +9,11 @@ import store from "./store";
 import ApolloClient from "apollo-boost";
 import VueApollo from "vue-apollo";
 const apolloClient = new ApolloClient({
-  uri: process.env.VUE_APP_GRAPH_CMS_URI,
+  uri: process.env.VUE_APP_GRAPH_CMS_URI
 });
 Vue.use(VueApollo);
 const apolloProvider = new VueApollo({
-  defaultClient: apolloClient,
+  defaultClient: apolloClient
 });
 
 Vue.config.productionTip = false;
@@ -22,5 +22,5 @@ new Vue({
   router,
   store,
   apolloProvider,
-  render: (h) => h(App),
+  render: h => h(App)
 }).$mount("#app");
